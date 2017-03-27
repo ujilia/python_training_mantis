@@ -12,7 +12,7 @@ class SessionHelper:
         wd.find_element_by_name("password").click()
         wd.find_element_by_name("password").clear()
         wd.find_element_by_name("password").send_keys(password)
-        wd.find_element_by_css_selector("input[value='Login']").click()
+        wd.find_element_by_css_selector("input[type='submit']").click()
 
     def logout(self):
         wd = self.app.wd
